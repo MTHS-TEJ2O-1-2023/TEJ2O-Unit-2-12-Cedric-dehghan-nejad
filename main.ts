@@ -37,8 +37,9 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.show()
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
-  basic.showNumber(distanceToObject)
-        } else { (distanceToObject >= 10)
+    basic.showNumber(distanceToObject)
+  }
+   else { (distanceToObject >= 10)
     basic.showIcon(IconNames.Happy)
     neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
@@ -47,6 +48,7 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.show()
     basic.showNumber(distanceToObject)
+
     basic.showIcon(IconNames.Happy)
 
   }
