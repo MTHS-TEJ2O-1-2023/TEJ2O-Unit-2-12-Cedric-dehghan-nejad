@@ -1,9 +1,8 @@
 /* Copyright (c) 2020 MTHS All rights reserved
- *
  * Created by: Cedric
  * Created on: Oct 2023
- * This program this code shows
-*/
+ * This program shows depending on the distance it will show a color
+ */
 
 
 // variables
@@ -40,13 +39,13 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.show()
-    basic.showIcon(IconNames.Yes)
+    basic.showNumber(distanceToObject)
+    basic.showIcon(IconNames.Happy)
     } else {
       neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
       neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
       neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
       neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
       neopixelStrip.show()
-      basic.showIcon(IconNames.No)
     }
 })
