@@ -22,10 +22,10 @@ neopixelStrip.show()
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     distanceToObject = sonar.ping(
-        DigitalPin.P1,
-        DigitalPin.P2,
-        PingUnit.Centimeters
-    )
+    DigitalPin.P1,
+    DigitalPin.P2,
+    PingUnit.Centimeters
+)
     if (distanceToObject < 10 ) {
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
