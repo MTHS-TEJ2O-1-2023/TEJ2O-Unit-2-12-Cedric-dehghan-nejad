@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Happy)
     basic.showNumber(distanceToObject)
   } else {
-    (distanceToObject >= 10)
+    if (distanceToObject >= 10)
     basic.showIcon(IconNames.Happy)
     neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
