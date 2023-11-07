@@ -6,7 +6,6 @@
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](./LICENSE)
 
-
 ## To lint your python code
 
 Run the following command in the terminal, where your *.py file is located:
