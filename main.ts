@@ -5,7 +5,7 @@
  * This program ...
 */
 
-// variable 
+// variable
 let neopixelStrip: neopixel.Strip = null
 let distanceToObject: number = 0
 
@@ -20,13 +20,13 @@ neopixelStrip.show()
 
 // find distance from sonar
 input.onButtonPressed(Button.A, function () {
-    basic.clearScreen()
-    distanceToObject = sonar.ping(
+  basic.clearScreen()
+  distanceToObject = sonar.ping(
     DigitalPin.P1,
     DigitalPin.P2,
     PingUnit.Centimeters
-)
-    if (distanceToObject < 10 ) {
+  )
+  if (distanceToObject < 10 ){
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
     neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -37,9 +37,8 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.show()
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
-
-    } else { (distanceToObject >= 10)
-        basic.showNumber(distanceToObject)
+  basic.showNumber(distanceToObject)
+        } else { (distanceToObject >= 10)
     basic.showIcon(IconNames.Happy)
     neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
@@ -50,5 +49,5 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
 
-    }
+  }
 })
