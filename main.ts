@@ -3,8 +3,6 @@
  * Created on: Oct 2023
  * This program shows depending on the distance it will show a color
  */
-
-
 // variables
 let distanceToObject: number = 0
 let neopixelStrip: neopixel.Strip = null
